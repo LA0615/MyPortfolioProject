@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,59 @@
 
 <body>
     <header>
-        <h1>Lea Arcidiacono</h1> 
-    <nav>
-     <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-    </ul>
-    </nav>
+        <h1>Lea Arcidiacono</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
     <main>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>            </p>
-      </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hello. My name is Lea Arcidiacono. Thank you for taking the time to read my portolio website. I spent the
+                last eighteen years teaching elementary and special education students.
+                I have always enjoyed technology and decided to make a career change into the world of web development
+                and coding. Although I am a beginner, I am working hard to devlop my skills for a future career in this
+                field. I am organized, patient, willing to learn, and will accept guidance, or constructive criticism, on tasks. I am a team player and will
+                work hard to achieve my goals, and the tasks I am given. I look forward to expanding my knowledge in this
+                field.</p>
+        </section>
 
-      <section id="porfolio">
-    <h2>Portfolio</h2>
-    <p>                 </p>
-      </section>
+        <section id="porfolio">
+            <h2>Portfolio</h2>
+            <p> </p>
 
-      <section id="contact-me">
-        <h2>Contact Me</h2>
-        <p>                   </p>
-      </section>
+            <!-- FYI on semantic importance 
+                main > section > aside
+            !-->
+            <div class="flex">
+                <div class="piece first-piece">A</div>
+                <div class="piece">B</div>
+                <div class="piece">C</div>
+            </div>
+
+            <div class="flex">
+                <div class="piece">A</div>
+                <div class="piece">B</div>
+                <div class="piece">C</div>
+
+            </div>
+
+        </section>
+
+        <section id="contact-me" class="contact-section">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
 
@@ -41,4 +70,5 @@
 
     </footer>
 </body>
+
 </html>

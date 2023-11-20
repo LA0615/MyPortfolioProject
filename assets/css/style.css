@@ -1,5 +1,21 @@
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom:20px;
+}
+.piece {
+    border: 1px solid black;
+    width:100%;
+    height: 200px;
+}
+.first-piece {
+    border: 4px solid red;
+    height: 300px;
+}
+
 header {
-    background-color: lightskyblue;
+    background-color: lightyellow;
     padding: 25px;
     display: flex;
     border-style: solid;
@@ -8,7 +24,7 @@ header {
 
   h1 {
     font-size: 55px;
-    color: white;
+    color: black;
     font-family: arial;
     margin-right: 20px;
   }
@@ -31,7 +47,98 @@ header {
 
   nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: arial;
+    font-size: 25px;
+  }
+
+  h2{
+    text-align: center;
+
+  }
+
+  /* Example: Lets say all sections have class "section" and you want them to have padding
+  But you want a particular section to have bigger text */
+  
+    .section {
+        padding: 20px;
+    }
+    #about-me {
+        font-size: 175%;
+        background-color:lightgoldenrodyellow ;
+        text-indent: 50px;
+    } 
+
+  
+
+
+/* Contact section */
+
+  .contact-section {
+    background-color: beige;
+    padding: 20px;
+  }
+  
+  .contact-section h2 {
+    color: black;
     font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: beige;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 50%;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    margin-bottom: 10px;
+    margin-top: 1px;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .contact-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover {
+    background-color: #555;
+  }
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Equal or greater than */
+/* If screen width is 992px wide or longer, then apply these css */
+@media only screen and (min-width: 992px) {
+    body {
+        /* background-color: green; */
+      }
+    .contact-section button:hover {
+    /* background-color: lightgreen; */
+    }
+}
+
+/* Smaller than (laptops/desktops, 991px and down) */
+/* Equal or less than */
+/* If screen width is 991px wide or shorter, then apply these css */
+@media only screen and (max-width: 991px) {
+    body {
+        /* background-color: red; */
+      }
+      .contact-section button:hover {
+      /* background-color: rgb(255,0,0); */
+      }
   }
