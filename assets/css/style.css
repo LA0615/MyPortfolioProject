@@ -2,113 +2,148 @@
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
+
 /*all boxes in portfolio section*/
 .piece {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
     border: 6px solid blue;
-    width:100%;
-    height: 200px;
+    width: 70%;
+    height: 180px;
     background-color: lightgrey;
+    display:block;
+  justify-content:center;
+  align-items: center;
+  padding: 45px;
+  margin: 10px;
 }
+
+.piece-image{
+    justify-content:center;
+    align-items: center;
+    width: 185px;
+    height: 150px;   
+    margin: 10px;
+}
+
 /*Larger box in portfolio section*/
 .first-piece {
     border: 8px solid blue;
     height: 300px;
+    font-size: 26px;
+    font-weight: bolder;
 }
 
 header {
     background-color: lightyellow;
     padding: 25px;
     display: flex;
-    border-style: solid;
-   align-items: center;
-  }
+    border: 5px solid black;
+    align-items: center;
+}
 
-  h1 {
+h1 {
     font-size: 55px;
-    color: black;
-    font-family:sans-serif;
+    color: blue;
+    font-family: sans-serif;
     margin-right: 20px;
-  }
+}
 
-  nav {
+.image-container {
+    display: block;
+    margin: 5px 0;
+    border: 10px solid black;
+}
+
+nav {
     margin-left: auto;
-  }
+}
 
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
-    margin:0%;
-    padding:0%;
-  }
+    margin: 0%;
+    padding: 0%;
+}
 
-  nav li {
+nav li {
     margin-right: 12px;
     padding-right: 12px;
-  }
+}
 
-  nav a {
+nav a {
     text-decoration: none;
     color: blue;
     font-family: arial;
     font-size: 25px;
     font-style: italic;
-  }
+}
 
-  h2{
+h2 {
     text-align: center;
     color: red
+}
 
-  }
+/* Distinguishes between sections and gives the ABOUT ME section a bigger font */
+/*Allows me to style the section individually */
 
-  /* Example: Lets say all sections have class "section" and you want them to have padding
-  But you want a particular section to have bigger text */
-  
-    .section {
-        padding: 20px;
-    }
-    #about-me {
-        font-size: 175%;
-        font-style: italic;
-        background-color:lightgoldenrodyellow ;
-        text-indent: 50px; 
-        border: 2px solid black;
-    } 
-    
-    #portfolio {
-        background-color: lightgoldenrodyellow;
-        border: 2px solid black;
-    }
-  
+.section {
+    padding: 20px;
+}
+
+#about-me {
+    font-size: 175%;
+    font-style: italic;
+    background-color: lightgoldenrodyellow;
+    text-indent: 50px;
+    border: 2px solid black;
+}
+
+#portfolio {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+}
+
+#contact-me h2 {
+    margin-right: 80px;
+    color: blue;
+}
+
+#contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 
 
 /* Contact section */
 
-  .contact-section {
+.contact-section {
     background-color: beige;
     padding: 20px;
     border: 5px solid black;
+}
 
-  }
-  
-  .contact-section h2 {
+.contact-section h2 {
     color: black;
     font-size: 30px;
     margin-bottom: 10px;
-    text-align: center;
     background-color: beige;
-  }
-  
-  .contact-section form {
+}
+
+.contact-section form {
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
     width: 50%;
-  }
-  
-  .contact-section input,
-  .contact-section textarea {
+}
+
+.contact-section input,
+.contact-section textarea {
     margin-bottom: 10px;
     margin-top: 1px;
     width: 100%;
@@ -116,19 +151,19 @@ header {
     border: 3px solid black;
     border-radius: 12px;
     box-sizing: border-box;
-  }
-  
-  .contact-section button {
+}
+
+.contact-section button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
-  }
-  
-  .contact-section button:hover {
+}
+
+.contact-section button:hover {
     background-color: #555;
-  }
+}
 
 
 
@@ -138,9 +173,10 @@ header {
 @media only screen and (min-width: 992px) {
     body {
         /* background-color: green; */
-      }
+    }
+
     .contact-section button:hover {
-    /* background-color: lightgreen; */
+        /* background-color: lightgreen; */
     }
 }
 
@@ -150,8 +186,9 @@ header {
 @media only screen and (max-width: 991px) {
     body {
         /* background-color: red; */
-      }
-      .contact-section button:hover {
-      /* background-color: rgb(255,0,0); */
-      }
-  }
+    }
+
+    .contact-section button:hover {
+        /* background-color: rgb(255,0,0); */
+    }
+}
