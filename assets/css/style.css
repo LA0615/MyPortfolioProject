@@ -24,13 +24,14 @@
 .piece-image{
     justify-content:center;
     align-items: center;
-    width: 185px;
+    width: 182px;
     height: 150px;   
     margin: 10px;
 }
 
 /*Larger box in portfolio section*/
 .first-piece {
+    background-color: rgb(192, 205, 242);
     border: 8px solid blue;
     height: 300px;
     font-size: 26px;
@@ -108,6 +109,9 @@ h2 {
 }
 
 #contact-me h2 {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 32px;
     margin-right: 80px;
     color: blue;
 }
