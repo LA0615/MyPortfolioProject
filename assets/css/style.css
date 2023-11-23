@@ -5,32 +5,32 @@
     margin-bottom: 20px;
 }
 
-/*all boxes in portfolio section*/
+/* All boxes in the portfolio section */
 .piece {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
     border: 6px solid blue;
     width: 20%;
-    height: 165px;
+    /* Adjust the height to auto or remove it to let the content determine the height */
+    height: auto; 
     background-color: lightgrey;
-  justify-content: space-between;
-  display: inline-block;
-  padding: 45px;
-  margin: 45px;
+    justify-content: space-between;
+    display: inline-block;
+    padding: 45px;
+    margin: 45px;
 }
 
 .piece-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    Width: 1980px;
-    height: 150px;
+    width: 100%; /* Adjusted to 100% for responsiveness */
+    height: auto; /* Allow the height to adjust based on the image content */
     margin: 10px;
-  }
+}
 
-
-/*Larger box in portfolio section*/
+/* Larger box in the portfolio section */
 .first-piece {
     background-color: rgb(192, 205, 242);
     border: 8px solid blue;
@@ -39,8 +39,8 @@
     font-weight: bolder;
     color: red;
     font-size: 40px;
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .first-piece a {
@@ -49,11 +49,11 @@
     align-items: center;
     width: 100%;
     height: 100%;
-  }
+}
 
-  .first-piece img {
+.first-piece img {
     max-width: 100%;
-    max-height: 100%; 
+    max-height: 100%;
 }
 
 
@@ -193,30 +193,30 @@ footer {
     background-color: grey;
     color: #fff;
     padding: 20px;
-  }
-  
-  .container {
-   max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
     margin: 0 auto;
-  }
-  
-  p {
+}
+
+p {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-  }
+}
 
-  .footer-icon {
+.footer-icon {
     width: 60px;
     height: 70px;
     margin-right: 10px;
-  }
-  
- 
+}
 
+
+/* Adjust the min-width for bigger screens */
 @media only screen and (min-width: 992px) {
     body {
-         background-color: darkkhaki; 
+        background-color: darkkhaki;
     }
 
     .contact-section button:hover {
@@ -224,13 +224,13 @@ footer {
     }
 }
 
-
+/* Adjust the max-width for smaller screens */
 @media only screen and (max-width: 991px) {
     body {
-         background-color: rgba(0, 145, 255, 0.776); 
+        background-color: rgba(0, 145, 255, 0.776);
     }
 
     .contact-section button:hover {
-         background-color: rgba(0, 145, 255, 0.776); 
+        background-color: rgba(0, 145, 255, 0.776);
     }
 }
