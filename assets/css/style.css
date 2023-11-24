@@ -1,8 +1,9 @@
 .flex {
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
 /* All boxes in the portfolio section */
@@ -12,22 +13,22 @@
     font-style: italic;
     border: 6px solid blue;
     width: 20%;
-    /* Adjust the height to auto or remove it to let the content determine the height */
     height: auto; 
     background-color: lightgrey;
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: inline-block;
     padding: 45px;
-    margin: 45px;
+    margin: 10px;
 }
 
 .piece-img {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Adjusted to 100% for responsiveness */
-    height: auto; /* Allow the height to adjust based on the image content */
-    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%; 
+    height: auto;
+    align-items:center;
+    margin: 10px 50px 20px;
 }
 
 /* Larger box in the portfolio section */
@@ -86,13 +87,13 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0%;
-    padding: 0%;
+    margin: 8px;
+    padding: 8px;
 }
 
 nav li {
-    margin-right: 12px;
-    padding-right: 12px;
+    margin-right: 8px;
+    padding-right: 8px;
 }
 
 nav a {
@@ -225,9 +226,10 @@ p {
 }
 
 /* Adjust the max-width for smaller screens */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 600px) {
     body {
         background-color: rgba(0, 145, 255, 0.776);
+        flex-direction: column;
     }
 
     .contact-section button:hover {
